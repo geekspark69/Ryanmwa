@@ -101,7 +101,7 @@ async def amireallyalive(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit(
             "`"
-            "Guruji hum abhi zinda hai \n\n"
+            "Thakuraeen hum yaha hai :D \n\n"
           
             "`"
             )
