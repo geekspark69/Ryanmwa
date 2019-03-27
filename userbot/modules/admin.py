@@ -304,7 +304,7 @@ async def spider(spdr):
         await spdr.edit("`Ruk`")
 
         # Announce that the function is done
-        await spdr.edit("`Chup BC`")
+        await spdr.edit("`Chup BeeCee :p`")
 
         # Announce to logging group
         if LOGGER:
