@@ -339,7 +339,6 @@ async def unmoot(unmot):
                 replymsg.sender_id,
                 rights
                 ))
-            unmute(replymsg.sender_id)
             await unmot.edit("```Unmuted Successfully```")
          
             if LOGGER:
