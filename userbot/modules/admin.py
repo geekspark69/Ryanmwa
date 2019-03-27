@@ -339,19 +339,20 @@ async def unmoot(unmot):
                 replymsg.sender_id,
                 rights
                 ))
-          await unmot.edit("```Unmuted Successfully```")
+            unmute(replymsg.sender_id)
+            await unmot.edit("```Unmuted Successfully```")
          
-          if LOGGER:
-            await unmot.client.send_message(
-                LOGGER_GROUP,
-                "#MUTE\n"
-                +"ID: `"+ str((await unmot.get_reply_message()).sender_id)
-                + "`",
-            )       
-   except UserIdInvalidError:
+            if LOGGER:
+                await unmot.client.send_message(
+                    LOGGER_GROUP,
+                    "#MUTE\n"
+                    +"ID: `"+ str((await unmot.get_reply_message()).sender_id)
+                    + "`",
+               )       
+        except UserIdInvalidError:
             await unmot.edit("`Uh oh my unmute logic broke!`")
-      
-      
+            
+            
 @register(incoming=True)
 async def muter(moot):
     try:
