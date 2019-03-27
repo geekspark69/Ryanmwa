@@ -301,10 +301,10 @@ async def spider(spdr):
         target = await spdr.get_reply_message()
         # Else, do announce and do the mute
         mute(spdr.chat_id, target.sender_id)
-        await spdr.edit("`Gets a tape!`")
+        await spdr.edit("`Ruk`")
 
         # Announce that the function is done
-        await spdr.edit("`Safely taped!`")
+        await spdr.edit("`Chup BC`")
 
         # Announce to logging group
         if LOGGER:
@@ -339,7 +339,7 @@ async def unmoot(unmot):
                 replymsg.sender_id,
                 rights
                 ))
-            await unmot.edit("```Unmuted Successfully```")
+            await unmot.edit("```Ab Kar Le Bakwas```")
          
             if LOGGER:
                 await unmot.client.send_message(
